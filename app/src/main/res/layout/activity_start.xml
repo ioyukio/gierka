@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@drawable/plama"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/title"/>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <TableRow
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sianko"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:fontFamily="@font/ka1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_sianko"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:layout_marginTop="1dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/trawa"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:fontFamily="@font/ka1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_trawa"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:layout_marginTop="1dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/siekierka"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:fontFamily="@font/ka1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_siekierka"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+
+                tools:ignore="RtlHardcoded,RtlSymmetry"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:fontFamily="@font/ka1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_start"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#673d20"
+        android:textSize="25dp"
+        android:onClick="startGame"
+        />
+</LinearLayout>

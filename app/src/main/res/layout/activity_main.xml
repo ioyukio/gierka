@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tloglowne"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:fontFamily="@font/ka1"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:id="@+id/pauseBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:onClick="pausePushed"
+        android:text="PAUSE"
+        android:fontFamily="@font/ka1"
+        android:textSize="13sp"
+        android:backgroundTint="#673d20"
+        />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_to_start"
+            android:fontFamily="@font/ka1"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/cow"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/cow"
+            android:layout_gravity="center_vertical"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/trawa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/trawa"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/siekierka"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/siekierka"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/sianko"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sianko"
+            tools:ignore="ContentDescription" />
+
+
+    </FrameLayout>
+
+</LinearLayout>
